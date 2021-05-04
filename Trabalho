@@ -1,0 +1,84 @@
+package br.edu.univas.main;
+import java.util.Scanner;
+public class StartApp {
+    
+      public static void main(String[] args) { 
+    	  float numero ;
+    	  float trianguloB, trianguloA, totalT ;
+    	  float paralelogramaB, paralelogramaA, total2T;
+    	  float pentaganoB, pentaganoA, total3T;
+    	  float retanguloB, retanguloA, total4T;
+            System.out.println("1=triangulo 2=paralelograma 3=pentagano 4=retangulo 9=sair");
+    	 
+    	  
+   
+        
+            Scanner leitor = new Scanner(System.in);
+            numero = leitor.nextInt();
+             if (numero == 1) {
+        	System.out.println("Digite o valor da altura: ");
+        		Scanner altura = new Scanner(System.in);
+        		trianguloA = altura.nextFloat();
+        		
+        	System.out.println("Escreva o valor da base: ");
+        
+        		Scanner base = new Scanner(System.in);
+        		trianguloB = base.nextFloat();
+        		
+        totalT = (trianguloB * trianguloA / 2);
+        	System.out.println("o valor do total é: " + totalT);
+          }
+  
+     {
+      if(numero == 2) {
+      
+    	System.out.println("Digite o valor da base: ");
+    		Scanner base = new Scanner(System.in);
+    		paralelogramaA = base.nextFloat();
+    		
+    	System.out.println("Escreva o valor da altura: ");
+    
+    		Scanner altura = new Scanner(System.in);
+    		paralelogramaB = altura.nextFloat();
+    		
+    
+	 float tota2T = ( paralelogramaB * paralelogramaA );
+    	System.out.println("o valor do total é: " + tota2T);
+      }
+      if(numero == 3) {
+          
+      	System.out.println("Digite o valor da base: ");
+      		Scanner lado = new Scanner(System.in);
+      		pentaganoA = lado.nextFloat();
+      		
+      	System.out.println("Escreva o valor da altura: ");
+      
+      		Scanner altura = new Scanner(System.in);
+      		pentaganoB = altura.nextFloat();
+      		
+      
+  	 float tota3T = ( 5* pentaganoA * pentaganoB);
+      	System.out.println("o valor do total é: " + tota3T);
+}
+      if(numero == 4) {
+          
+        	System.out.println("Digite o valor da base: ");
+        		Scanner base = new Scanner(System.in);
+        		retanguloA = base.nextFloat();
+        		
+        	System.out.println("Escreva o valor da altura: ");
+        
+        		Scanner altura = new Scanner(System.in);
+        		retanguloB = altura.nextFloat();
+        		
+        
+    	 float tota4T = ( retanguloA * retanguloB);
+        	System.out.println("o valor do total é: " + tota4T );} 
+        	
+        	if(numero == 9) {
+        	System.out.println("o programa acabou");
+        	System.exit( 0 );
+        	}
+}
+      }  
+}
